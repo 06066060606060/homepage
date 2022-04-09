@@ -31,19 +31,24 @@ body {
 }
 /*//------------------------// */
 
+
+
+
 /*//---------GRID---------------// */
 grid {
   position: absolute;
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr 2fr;
+  grid-template-columns: 100px 300px 120px 120px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   justify-items: stretch;
   align-items: stretch;
-  background-color: rgba(0, 0, 0, 0.46);
+  background-color: rgba(0, 0, 0, 0.52);
   height: 61px;
   border-radius: 0px 0px 20px 0px;
-  min-width: 590px;
+  min-width: auto;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 /*//------------------------// */
 /*//--------ITEM1-START---------------// */
@@ -80,9 +85,10 @@ span:hover::before {
    transition: 0.25s;
 }
 
-.blur {
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+#blur {
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.712);
+    border-radius: 20px;
 }
 
 /* menu */
@@ -91,25 +97,24 @@ span:hover::before {
   width: 250px;
   position: fixed;
   top: 0;
-  margin-top: 70px;
+  margin-top: 40px;
   left: -250px;
   z-index: 1;
   color: white;
   text-decoration: none;
   padding-top: 30px;
   transition: 0.25s;
-  background-color:rgba(0, 0, 0, 0.286);
   border-radius: 20px;
+  
 }
 
 #menu.active {
   left: 10px;
   transition: 0.3s;
-  background-color:rgba(0, 0, 0, 0.66);
 }
+
 .favoris {
   padding: 6px;
-  border-radius: 20px;
 }
 
 a#fav1,
@@ -171,13 +176,13 @@ items2 {
 }
 
 #query {
+
   margin-left: 3px;
   border: 0px solid;
   height: 40px;
   border-radius: 20px 0px 0px 20px;
   padding: 10px;
-  box-shadow: 0 35px 68px 0 rgba(136, 174, 222, 0.42),
-    0 -8px 16px 0 #edf5ff inset;
+ background-color:rgba(99, 99, 99, 0.601)
 }
 
 #query:focus {
@@ -196,9 +201,10 @@ items3 {
 }
 
 items4 {
+
     margin-top: 4px;
     padding-left: 5px;
-    /* background-color: #3476ce; */
+    /* background-color: #34ce8b;  */
   }
 
 .btc {
@@ -214,4 +220,12 @@ items4 {
   border: none;
   margin-left: 40px;
   margin-top: 7px;
+}
+
+
+#quantity{
+    width: 40px;
+  outline: none;
+  background-color: rgba(134, 134, 134, 0.99);
+  border: none;
 }

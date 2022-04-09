@@ -1,5 +1,7 @@
 //Mes fonctions JS
 
+
+// fonction background bing avec selecteur.
 function GetJSON() {
   var xmlhttp = new XMLHttpRequest();
   var url = "https://peapix.com/bing/feed?country=FR";
@@ -40,6 +42,8 @@ function toggleNav() {
   updateElement.classList.toggle("active");
 }
 
+//fonction favoris en json
+
 function Favoris() {
   fetch("./favoris.json")
     .then((res) => res.json())
@@ -68,20 +72,25 @@ function Favoris() {
       var output7 = obj.fav7;
 
       document.getElementById("fav1").text = outputn1;
-      // document.getElementById("icon1").src = output1 + "favicon.ico";
+      // document.getElementById("icon1").src = output1 + "favicon.ico";  //grab favicon
       document.getElementById("fav1").href = output1;
+      //  localStorage.setItem("fav1", output1); // save to local storage
 
       document.getElementById("fav2").text = outputn2;
       document.getElementById("fav2").href = output2;
+    
 
       document.getElementById("fav3").text = outputn3;
       document.getElementById("fav3").href = output3;
 
+
       document.getElementById("fav4").text = outputn4;
       document.getElementById("fav4").href = output4;
 
+
       document.getElementById("fav5").text = outputn5;
       document.getElementById("fav5").href = output5;
+
 
       document.getElementById("fav7").text = outputn7;
       document.getElementById("fav7").href = output7;
