@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HomePage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="GetJSON(), bitcoinP(), Favoris()">
+    <div id="bg">
+    <img id="InputB" src="" alt="">
+</div>
+    <header>
+        <grid1>
+            <items1><div id="menu">
+                <div class="menu-icon" onclick="toggleNav()">
+                        <span>Favoris</span>
+                </div>
+                      <img id="icon1" src="" alt=""><a id="fav1" href=""></a>
+                      <img id="icon2" src="" alt=""><a id="fav2" href=""></a>
+                      <a id="fav3" href=""></a>
+                      <a id="fav4" href=""></a>
+                  </div>
+                </items1>
+            <items2>
+                <form role="search" id="form">
+                    <input type="search" id="query" name="q" placeholder="Google Search..."
+                        aria-label="Search">
+                    <button class="SearchBtn" >Search</button>
+                </form>
+            </items2>
+            <items3>
+                <p class="btc"><input type="text" id="textInputB" disabled="disabled" value=""></p>
+            </items3>
+        </grid1>
+    </header>
+
+    <script src="home.js"></script>
+    <script src="btc.js"></script>
+    <script src="search.js"></script>
+
+</body>
+
+</html>

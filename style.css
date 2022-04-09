@@ -1,0 +1,201 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+
+    font-family: "Share Tech", sans-serif;
+}
+/*//---------BACKGROUND-BING--------------// */
+#bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+#InputB {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+/*//------------------------// */
+
+
+/*//---------GRID---------------// */
+grid1 {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0.275);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    height: 61px;
+    border-radius: 0px 0px 20px 0px;
+}
+/*//------------------------// */
+/*//--------ITEM1-START---------------// */
+
+items1 {
+ 
+
+}
+/* MENU----------- */
+
+.menu-icon{
+    position: fixed;
+    z-index: 2;
+    left: 10px;
+    top: 9px;
+
+  }
+  
+  span {
+    display: inline-block;
+    height: 22px;
+    width: 50px;
+    background-color: rgba(189, 189, 189, 0.083);
+    transition: .5s;
+     padding-top: 12px;
+     padding-bottom: 8px;
+     padding-left: 25px;
+     padding-right: 22px;
+     border-radius:25px;
+     backdrop-filter: blur(20px);
+  }
+  
+  
+  /*  Menu Hover */
+  span:hover, span:hover::after, span:hover::before {
+    background-color: rgba(189, 189, 189, 0.172);
+    transition: .25s;
+  }
+  
+  /* Navigation */
+  #menu {
+      height: 350px;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      margin-top:70px;
+      left: -250px;
+      z-index: 1;
+      padding-top: 10px;
+      color: white;
+      text-decoration: none;
+      padding-top: 20px;
+      transition: .25s;
+      background-color: rgba(0, 0, 0, 0.275);
+      border-radius: 20px;
+      
+     
+  }
+  
+  #menu.active {
+    left: 10px;
+    transition: .3s;
+   
+  }
+  
+  #menu a {
+      display: block;
+      padding: 10px;
+      margin-left: 40px;
+      text-decoration: none;
+      font-size: 1.5em;
+      color: rgb(255, 255, 255);
+    
+  }
+  
+  #menu a:hover {
+      color: white;
+  }
+
+
+
+/*//------------------------// */
+/*//---------SEARCH---------------// */
+
+items2 {
+padding-left: 5px;
+}
+
+.SearchBtn {
+    font-weight: 600;
+    margin-left: -3px;
+    background-color: aliceblue;
+    height: 40px;
+    width: 80px;
+    border-radius: 0px 20px 20px 0px;
+    border: 0px solid;
+    background-color: #ffffff;
+    box-shadow: 0 35px 68px 0 rgba(136, 174, 222, 0.42),
+        0 -8px 16px 0 #b9d1f1 inset;
+}
+
+.SearchBtn:hover{
+    border: 1px solid #3476ce;
+    color:#3476ce;
+    transition: .25s;
+}
+
+#form {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#query {
+    margin-left: 3px;
+    border: 0px solid;
+    height: 40px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+    box-shadow: 0 35px 68px 0 rgba(136, 174, 222, 0.42),
+        0 -8px 16px 0 #edf5ff inset;
+}
+
+#query:focus {
+    border: none;
+    outline: none;
+}
+
+/*//------------------------// */
+
+/*//-------ITEM3--BITCOIN---------------// */
+
+items3 {
+margin-top:4px;
+padding-left: 5px;
+}
+
+.btc {
+    margin: 10px;
+    background-image: url(./Bitcoin.svg.png);
+    height: 32px;
+    width: 32px;  
+  }
+
+  #textInputB{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-left: 40px;
+    margin-top: 7px ;
+}
+
+
+  
