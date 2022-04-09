@@ -63,11 +63,13 @@ items1 {
 
   }
   
+
+
   span {
     display: inline-block;
     height: 22px;
     width: 50px;
-    background-color: rgba(189, 189, 189, 0.083);
+    background-color: rgba(189, 189, 189, 0.237);
     transition: .5s;
      padding-top: 12px;
      padding-bottom: 8px;
@@ -80,7 +82,7 @@ items1 {
   
   /*  Menu Hover */
   span:hover, span:hover::after, span:hover::before {
-    background-color: rgba(189, 189, 189, 0.172);
+    background-color: rgba(121, 120, 120, 0.172);
     transition: .25s;
   }
   
@@ -98,7 +100,7 @@ items1 {
       text-decoration: none;
       padding-top: 20px;
       transition: .25s;
-      background-color: rgba(0, 0, 0, 0.275);
+      background-color: rgba(0, 0, 0, 0.513);
       border-radius: 20px;
       
      
@@ -107,23 +109,24 @@ items1 {
   #menu.active {
     left: 10px;
     transition: .3s;
-   
   }
   
   #menu a {
-      display: block;
-      padding: 10px;
-      margin-left: 40px;
+      margin: 10px;
       text-decoration: none;
       font-size: 1.5em;
       color: rgb(255, 255, 255);
-    
+
   }
   
   #menu a:hover {
       color: white;
   }
 
+ img#icon1, img#icon2{
+   padding-left: 70px;
+   margin-top: 20px;
+    }
 
 
 /*//------------------------// */
