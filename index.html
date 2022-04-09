@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,31 +11,32 @@
 
 <body onload="GetJSON(), bitcoinP(), Favoris()">
     <div id="bg">
-    <img id="InputB" src="" alt="">
-</div>
+        <img id="InputB" src="" alt="">
+    </div>
     <header>
-        <grid1>
-            <items1><div id="menu">
-                <div class="menu-icon" onclick="toggleNav()">
+        <grid>
+            <items1>
+                <div id="menu">
+                    <div class="menu-icon" onclick="toggleNav()">
                         <span>Favoris</span>
+                    </div>
+                    <div class="favoris"><img id="icon1" src="1.png" alt=""><a id="fav1" href=""></a></div><br>
+                    <div class="favoris"> <img id="icon2" src="2.png" alt=""><a id="fav2" href=""></a></div><br>
+                    <div class="favoris"> <img id="icon3" src="3.png" alt=""><a id="fav3" href=""></a></div><br>
+                    <div class="favoris"> <img id="icon4" src="4.png" alt=""><a id="fav4" href=""></a></div><br>
+                    <div class="favoris"> <img id="icon5" src="5.png" alt=""><a id="fav5" href=""></a></div><br>
                 </div>
-                     <div class="favoris"><img id="icon1" src="1.png" alt=""><a id="fav1" href=""></a></div><br>
-                     <div class="favoris"> <img id="icon2" src="2.png" alt=""><a id="fav2" href=""></a></div><br>
-                     <div class="favoris"> <img id="icon2" src="3.png" alt=""><a id="fav3" href=""></a></div><br>
-                    <div class="favoris"> <img id="icon2" src="4.png" alt=""><a id="fav4" href=""></a></div><br>
-                  </div>
-                </items1>
+            </items1>
             <items2>
                 <form role="search" id="form">
-                    <input type="search" id="query" name="q" placeholder="Google Search..."
-                        aria-label="Search">
-                    <button class="SearchBtn" >Search</button>
+                    <input type="search" id="query" name="q" placeholder="Google Search..." aria-label="Search">
+                    <button class="SearchBtn">Search</button>
                 </form>
             </items2>
             <items3>
                 <p class="btc"><input type="text" id="textInputB" disabled="disabled" value=""></p>
             </items3>
-        </grid1>
+        </grid>
     </header>
 
     <script src="home.js"></script>

@@ -30,7 +30,7 @@ body {
 /*//------------------------// */
 
 /*//---------GRID---------------// */
-grid1 {
+grid {
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
@@ -105,10 +105,12 @@ span:hover::before {
 
 .favoris {
    background-color: rgba(0, 0, 0, 0.076); 
+   height: 30px;
 }
 
 
-a#fav1,a#fav2,a#fav3,a#fav4{
+a#fav1,a#fav2,a#fav3,a#fav4,a#fav5{
+
   position: absolute;
   text-decoration: none;
   font-size: 1.5em;
@@ -120,14 +122,15 @@ a#fav1,a#fav2,a#fav3,a#fav4{
   color: white;
 }
 
-img#icon1, img#icon2, img#icon3, img#icon4{
+img#icon1, img#icon2, img#icon3, img#icon4,img#icon5{
+   
     padding-right: 15px;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 
 /*//------------------------// */
-/*//---------SEARCH---------------// */
+/*//---------google search---------------// */
 
 items2 {
   padding-left: 5px;
