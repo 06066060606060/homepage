@@ -36,11 +36,11 @@ function Favoris() {
       var output2 = obj.fav2;
 
       document.getElementById("fav1").text = outputn1;
-      document.getElementById("icon1").src = output1 + "favicon.ico";
+     // document.getElementById("icon1").src = output1 + "favicon.ico";
       document.getElementById("fav1").href = output1;
 
       document.getElementById("fav2").text = outputn2;
-      document.getElementById("icon2").src = output2 + "favicon.ico";
+     // document.getElementById("icon2").src = output2 + "favicon.ico";
       document.getElementById("fav2").href = output2;
     });
 }
