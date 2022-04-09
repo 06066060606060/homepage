@@ -1,10 +1,21 @@
 //Mes fonctions JS
 
-
 function GetJSON() {
   var xmlhttp = new XMLHttpRequest();
-  var url = "https://peapix.com/bing/feed?country=DE";
-  var imgvariant = "4"
+  var url = "https://peapix.com/bing/feed?country=FR";
+
+  var storedValue = localStorage.getItem("variant");
+
+  if (storedValue == null) {
+    // console.log("variant null");
+    document.getElementById("quantity").value = "1";
+    localStorage.setItem("variant", "1");
+    var imgvariant = "1";
+  } else {
+    //console.log("variant not null"); 
+    var imgvariant = localStorage.getItem("variant");
+    document.getElementById("quantity").value = imgvariant;
+  }
 
   xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -17,6 +28,11 @@ function GetJSON() {
   };
   xmlhttp.open("GET", url, true);
   xmlhttp.send();
+}
+
+function changeBg() {
+imgvariant = document.getElementById("quantity").value;
+localStorage.setItem("variant", imgvariant);
 }
 
 function toggleNav() {
@@ -66,7 +82,7 @@ function Favoris() {
 
       document.getElementById("fav5").text = outputn5;
       document.getElementById("fav5").href = output5;
-      
+
       document.getElementById("fav7").text = outputn7;
       document.getElementById("fav7").href = output7;
     });

@@ -63,7 +63,7 @@ span {
   display: inline-block;
   height: 22px;
   width: 50px;
-  background-color: rgba(189, 189, 189, 0.237);
+  background-color:rgba(0, 0, 0, 0.286);
   transition: 0.5s;
   padding-top: 12px;
   padding-bottom: 8px;
@@ -76,8 +76,8 @@ span {
 span:hover,
 span:hover::after,
 span:hover::before {
-  background-color: rgba(121, 120, 120, 0.172);
-  transition: 0.25s;
+    background-color:rgba(0, 0, 0, 0.66);
+   transition: 0.25s;
 }
 
 .blur {
@@ -98,13 +98,14 @@ span:hover::before {
   text-decoration: none;
   padding-top: 30px;
   transition: 0.25s;
-  background-color: rgba(0, 0, 0, 0.46);
+  background-color:rgba(0, 0, 0, 0.286);
   border-radius: 20px;
 }
 
 #menu.active {
   left: 10px;
   transition: 0.3s;
+  background-color:rgba(0, 0, 0, 0.66);
 }
 .favoris {
   padding: 6px;
@@ -148,22 +149,19 @@ items2 {
 }
 
 .SearchBtn {
+    color: white;
   font-weight: 600;
   margin-left: -4px;
-  background-color: aliceblue;
-  height: 40px;
+  background-color:rgba(0, 0, 0, 0.286);
+  height: 41px;
   width: 80px;
   border-radius: 0px 20px 20px 0px;
   border: 0px solid;
-  background-color: #ffffff;
-  box-shadow: 0 35px 68px 0 rgba(136, 174, 222, 0.42),
-    0 -8px 16px 0 #b9d1f1 inset;
 }
 
 .SearchBtn:hover {
-  border: 1px solid #3476ce;
-  color: #3476ce;
   transition: 0.25s;
+   background-color:rgba(0, 0, 0, 0.66);
 }
 
 #form {
