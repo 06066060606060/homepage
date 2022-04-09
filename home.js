@@ -34,6 +34,13 @@ function Favoris() {
    //fav2
       var outputn2 = obj.name2;
       var output2 = obj.fav2;
+   //fav3
+   var outputn3 = obj.name3;
+   var output3 = obj.fav3;
+   //fav4
+   var outputn4 = obj.name4;
+   var output4 = obj.fav4;
+
 
       document.getElementById("fav1").text = outputn1;
      // document.getElementById("icon1").src = output1 + "favicon.ico";
@@ -42,5 +49,16 @@ function Favoris() {
       document.getElementById("fav2").text = outputn2;
      // document.getElementById("icon2").src = output2 + "favicon.ico";
       document.getElementById("fav2").href = output2;
+
+      document.getElementById("fav3").text = outputn3;
+      // document.getElementById("icon2").src = output2 + "favicon.ico";
+       document.getElementById("fav3").href = output3;
+
+       document.getElementById("fav4").text = outputn4;
+       // document.getElementById("icon2").src = output2 + "favicon.ico";
+        document.getElementById("fav4").href = output4;
+
+
+
     });
 }

@@ -2,5 +2,9 @@
     "name1": "Twitter",
     "fav1": "http:\/\/twitter.com\/",
     "name2": "Youtube",
-    "fav2": "http:\/\/youtube.com\/"
+    "fav2": "http:\/\/youtube.com\/",
+    "name3": "Binance",
+    "fav3": "http:\/\/binance.com\/",
+    "name4": "CoinGecko",
+    "fav4": "http:\/\/coingecko.com\/"
 }

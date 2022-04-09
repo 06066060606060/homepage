@@ -89,12 +89,12 @@ span:hover::before {
   margin-top: 70px;
   left: -250px;
   z-index: 1;
-  padding-top: 10px;
+  padding-top: 5px;
   color: white;
   text-decoration: none;
   padding-top: 20px;
   transition: 0.25s;
-  background-color: rgba(0, 0, 0, 0.513);
+  background-color: rgba(0, 0, 0, 0.63);
   border-radius: 20px;
 }
 
@@ -104,27 +104,27 @@ span:hover::before {
 }
 
 .favoris {
-  background-color: blue;
-  text-align: center;
+   background-color: rgba(0, 0, 0, 0.076); 
 }
 
-#menu a {
+
+a#fav1,a#fav2,a#fav3,a#fav4{
+  position: absolute;
   text-decoration: none;
   font-size: 1.5em;
   color: rgb(255, 255, 255);
+
 }
 
 #menu a:hover {
   color: white;
 }
 
-img#icon1 {
-  padding-right: 10px;
+img#icon1, img#icon2, img#icon3, img#icon4{
+    padding-right: 15px;
+    margin-left: 50px;
 }
 
-img#icon2 {
-  padding-right: 10px;
-}
 
 /*//------------------------// */
 /*//---------SEARCH---------------// */
