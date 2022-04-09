@@ -8,5 +8,7 @@
     "name4": "CoinGecko",
     "fav4": "http:\/\/coingecko.com\/",
     "name5": "My Miner",
-    "fav5": "http:\/\/192.168.0.3\/"
+    "fav5": "http:\/\/192.168.0.3\/",
+    "name7": "Github",
+    "fav7": "http:\/\/github.com\/"
 }

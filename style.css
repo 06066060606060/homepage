@@ -35,7 +35,7 @@ body {
 grid {
   position: absolute;
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 1fr 3fr 2fr 2fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   justify-items: stretch;
@@ -87,7 +87,7 @@ span:hover::before {
 
 /* menu */
 #menu {
-  height:265px;
+  height:295px;
   width: 250px;
   position: fixed;
   top: 0;
@@ -116,7 +116,8 @@ a#fav2,
 a#fav3,
 a#fav4,
 a#fav5,
-a#fav6 {
+a#fav6,
+a#fav7 {
   position: absolute;
   text-decoration: none;
   font-size: 1.2em;
@@ -133,7 +134,8 @@ img#icon2,
 img#icon3,
 img#icon4,
 img#icon5,
-img#icon6 {
+img#icon6,
+img#icon7 {
   padding-right: 15px;
   margin-left: 40px;
 }
@@ -194,6 +196,12 @@ items3 {
   padding-left: 5px;
   /* background-color: #3476ce; */
 }
+
+items4 {
+    margin-top: 4px;
+    padding-left: 5px;
+    /* background-color: #3476ce; */
+  }
 
 .btc {
   margin: 10px;

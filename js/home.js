@@ -1,12 +1,16 @@
+//Mes fonctions JS
+
+
 function GetJSON() {
   var xmlhttp = new XMLHttpRequest();
-  var url = "https://peapix.com/bing/feed?country=FR";
+  var url = "https://peapix.com/bing/feed?country=DE";
+  var imgvariant = "4"
 
   xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       var ans = JSON.parse(this.responseText);
       // console.log(ans[2]['fullUrl']);
-      var pointer = ans[2]["fullUrl"].toString();
+      var pointer = ans[imgvariant]["fullUrl"].toString();
       document.getElementById("InputB").src = pointer;
       //  console.log(pointer);
     }
@@ -43,6 +47,9 @@ function Favoris() {
       //fav5
       var outputn5 = obj.name5;
       var output5 = obj.fav5;
+      //fav7
+      var outputn7 = obj.name7;
+      var output7 = obj.fav7;
 
       document.getElementById("fav1").text = outputn1;
       // document.getElementById("icon1").src = output1 + "favicon.ico";
@@ -59,5 +66,8 @@ function Favoris() {
 
       document.getElementById("fav5").text = outputn5;
       document.getElementById("fav5").href = output5;
+      
+      document.getElementById("fav7").text = outputn7;
+      document.getElementById("fav7").href = output7;
     });
 }
