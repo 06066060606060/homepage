@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 
+html{
+    scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
   max-width: 1920px;
-
   font-family: "Share Tech", sans-serif;
 }
 /*//---------BACKGROUND-BING--------------// */
@@ -41,6 +43,7 @@ grid {
   background-color: rgba(0, 0, 0, 0.46);
   height: 61px;
   border-radius: 0px 0px 20px 0px;
+  min-width: 590px;
 }
 /*//------------------------// */
 /*//--------ITEM1-START---------------// */
@@ -82,9 +85,7 @@ span:hover::before {
   -webkit-backdrop-filter: blur(5px);
 }
 
-
-
-/* Navigation */
+/* menu */
 #menu {
   height:265px;
   width: 250px;
@@ -118,8 +119,9 @@ a#fav5,
 a#fav6 {
   position: absolute;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: rgb(255, 255, 255);
+  margin-top: 2px;
 }
 
 #menu a:hover {
@@ -145,7 +147,7 @@ items2 {
 
 .SearchBtn {
   font-weight: 600;
-  margin-left: -3px;
+  margin-left: -4px;
   background-color: aliceblue;
   height: 40px;
   width: 80px;
@@ -190,11 +192,12 @@ items2 {
 items3 {
   margin-top: 4px;
   padding-left: 5px;
+  /* background-color: #3476ce; */
 }
 
 .btc {
   margin: 10px;
-  background-image: url(./Bitcoin.svg.png);
+  background-image: url(./img/Bitcoin.svg.png);
   height: 32px;
   width: 32px;
 }
