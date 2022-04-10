@@ -11,7 +11,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  max-width: 1920px;
   font-family: "Share Tech", sans-serif;
 }
 /*//---------BACKGROUND--IMAGE-BING--------------// */
@@ -54,12 +53,10 @@ grid {
 }
 /*//------------------------// */
 
-
 /* ----------------------------grid item 1 Start boutton ------------------------------------*/
 
 items1 {
 }
-
 
 .menu-icon {
   position: fixed;
@@ -80,7 +77,6 @@ span {
   padding-right: 20px;
   border-radius: 25px;
   user-select: none;
- 
 }
 
 /*  Menu Hover */
@@ -88,14 +84,12 @@ span:hover,
 span:hover::after,
 span:hover::before {
   background-color: rgba(0, 0, 0, 0.66);
-
 }
 
 #blur {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.712);
   border-radius: 20px;
-  
 }
 
 /* ----------------------------menu favoris ------------------------------------*/
@@ -113,19 +107,16 @@ span:hover::before {
   transition: 0.25s;
   border-radius: 20px;
   user-select: none;
-  
 }
 
 #menu.active {
   left: 10px;
   transition: 0.3s;
   transition: 0.25s;
-
 }
 
 .favoris {
   padding: 6px;
-  
 }
 
 a#fav1,
@@ -202,11 +193,11 @@ items2 {
 
 /*//------------------------// */
 
-/* ----------------------------grid item 3 bitcoin ------------------------------------*/
+/* ----------------------------grid item 3 bitcoin display none par default----------------------------*/
 
 items3 {
-  display:none; /* //TODO */
-   width: 110px;
+  display: none;
+  width: 110px;
   margin-top: 4px;
   padding-left: 5px;
 
@@ -244,7 +235,6 @@ items4 {
   /* background-color: #34ce8b;  */
 }
 
-
 /* Icone menu Option */
 
 .option-icon {
@@ -268,18 +258,16 @@ items4 {
   font-size: 0.6em;
 }
 
-.option-icon:hover i{
+.option-icon:hover i {
   opacity: 80%;
 }
-
-
 
 /* ----------------------------menu option------------------------------------*/
 #option-menu {
   position: fixed;
   z-index: 1;
   padding: 20px;
-   margin-top: -50%;
+  margin-top: -50%;
   /* margin-top: 15%; */
   margin-left: 20%;
   background-color: rgba(0, 0, 0, 0.737);
@@ -290,7 +278,7 @@ items4 {
   user-select: none;
 }
 
-#option-menu p{
+#option-menu p {
   color: white;
   margin-left: 25px;
   margin: 10px;
@@ -299,15 +287,13 @@ items4 {
 /* menu activé par le js */
 #option-menu.active {
   margin-top: 15%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-
-#link-option a{
+#link-option a {
   color: rgb(0, 153, 255);
   text-decoration: none;
 }
-
 
 /* Selecteur background */
 #quantity {
@@ -317,4 +303,19 @@ items4 {
   outline: none;
   background-color: rgba(134, 134, 134, 0.99);
   border: none;
+}
+
+/* ---------------RESPONSIVE---------------------------- */
+@media screen and (max-width: 768px) {
+  #option-menu {
+    margin-left: -200px;
+  }
+
+  #option-menu.active {
+    margin-top: 15%;
+    transition: 0.5s;
+  }
+  items3.active  {
+    display: none;
+  }
 }
