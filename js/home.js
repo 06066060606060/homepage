@@ -38,14 +38,15 @@ localStorage.setItem("variant", imgvariant);
 }
 
 
-// apparition menu
+// active menu favoris
 function toggleNav() {
   var updateElement = document.getElementById("menu");
   updateElement.classList.toggle("active");
 }
 
+// active menu option
 function optionMenu(){
-  console.log("optionMenu");
+  //console.log("optionMenu");
   var optionmenu = document.getElementById("option-menu");
   optionmenu.classList.toggle("active");
 }
