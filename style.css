@@ -40,7 +40,7 @@ body {
 grid {
   position: absolute;
   display: grid;
-  grid-template-columns: 100px 300px 120px 120px;
+  grid-template-columns: 100px 300px auto auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   justify-items: stretch;
@@ -199,12 +199,20 @@ items2 {
 /*//-------ITEM3--BITCOIN---------------// */
 
 items3 {
+  display:none; /* //TODO */
+   width: 110px;
   margin-top: 4px;
   padding-left: 5px;
   /* background-color: #3476ce; */
 }
 
-.btc {
+items3.active {
+  margin-top: 4px;
+  padding-left: 5px;
+  /* background-color: #3476ce; */
+}
+
+#btc {
   margin: 10px;
   background-image: url(./img/Bitcoin.svg.png);
   height: 32px;
@@ -231,17 +239,14 @@ items4 {
 /* Menu d'option */
 
 .option-icon {
-  font-size: 0.8em;
-  padding-top:10px;
-  padding-left: 5px;
-  padding-right: 5px;
+
   text-align: center;
   color: aliceblue;
-  margin-top: 8px;
-  height: 24px;
-  width: 52px;
+  height: 20px;
+  width: 20px;
   background-color: rgba(22, 22, 22, 0.638);
-  border-radius: 20px;
+  border-radius: 100%;
+  user-select: none;
 }
 
 .option-icon:hover {
@@ -252,8 +257,9 @@ items4 {
 #option-menu {
   position: fixed;
   z-index: 1;
+  padding: 10px;
   /* margin-top: -30%; */
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 20%;
   background-color: rgba(0, 0, 0, 0.737);
   height: 100px;
@@ -266,12 +272,19 @@ items4 {
 #option-menu p{
   color: white;
   margin-left: 25px;
+  margin: 10px;
 }
 
 /* menu activé par le js */
 #option-menu.active {
-  margin-top: -30%;
+  margin-top: -40%;
   transition: 0.3s;
+}
+
+
+#link-option a{
+  color: rgb(0, 153, 255);
+  text-decoration: none;
 }
 
 
