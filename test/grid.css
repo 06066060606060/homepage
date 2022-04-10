@@ -48,14 +48,6 @@ article {
     left: 50%;
 }
 
-article a {
-    position: absolute;
-    background-color: rgb(120, 37, 214);
-    left: 50%;
-    top:20%;
-}
-
-
 /* //------------------footer------------------- */
 footer {
     background-color: rgb(162, 221, 0);
