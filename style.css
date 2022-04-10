@@ -65,6 +65,7 @@ items1 {
   top: 9px;
 }
 
+
 span {
   display: inline-block;
   height: 22px;
@@ -83,7 +84,12 @@ span {
 span:hover,
 span:hover::after,
 span:hover::before {
+  color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.66);
+}
+
+span:active{
+  background-color: rgba(134, 134, 134, 0.99);
 }
 
 #blur {
@@ -101,7 +107,7 @@ span:hover::before {
   margin-top: 40px;
   left: -250px;
   z-index: 1;
-  color: white;
+  color: rgba(255, 255, 255, 0.524);
   text-decoration: none;
   padding-top: 30px;
   transition: 0.25s;
@@ -135,6 +141,7 @@ a#fav7 {
 
 #menu a:hover {
   color: white;
+  background-color: rgba(99, 99, 99, 0.713);
 }
 
 img#icon1,
@@ -145,7 +152,7 @@ img#icon5,
 img#icon6,
 img#icon7 {
   padding-right: 15px;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 /*//------------------------// */
@@ -156,7 +163,7 @@ items2 {
 }
 
 .SearchBtn {
-  color: white;
+  color: rgba(255, 255, 255, 0.524);
   font-weight: 600;
   margin-left: -4px;
   background-color: rgba(0, 0, 0, 0.286);
@@ -169,6 +176,11 @@ items2 {
 .SearchBtn:hover {
   transition: 0.25s;
   background-color: rgba(0, 0, 0, 0.66);
+  color: rgb(255, 255, 255);
+}
+
+.SearchBtn:active{
+  background-color: rgba(134, 134, 134, 0.99);
 }
 
 #form {
@@ -183,8 +195,12 @@ items2 {
   height: 40px;
   border-radius: 20px 0px 0px 20px;
   padding: 10px;
-  background-color: rgba(99, 99, 99, 0.601);
+  background-color: rgba(99, 99, 99, 0.461);
 }
+#query:hover {
+  background-color: rgba(99, 99, 99, 0.713);
+}
+
 
 #query:focus {
   border: none;
@@ -249,29 +265,34 @@ items4 {
   background-color: rgba(22, 22, 22, 0.891);
 }
 
+.option-icon:active {
+  background-color: rgba(134, 134, 134, 0.99);
+}
+
 .option-icon i {
-  opacity: 50%;
   margin-left: 5px;
   margin-bottom: 5px;
   user-select: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.52);
   font-size: 0.6em;
 }
 
 .option-icon:hover i {
-  opacity: 80%;
+  color: rgb(255, 255, 255);
 }
+
+
 
 /* ----------------------------menu option------------------------------------*/
 #option-menu {
   position: fixed;
   z-index: 1;
   padding: 20px;
-  margin-top: -50%;
-  /* margin-top: 15%; */
+   margin-top: -100%;
+   /* margin-top: 15%; */
   margin-left: 20%;
   background-color: rgba(0, 0, 0, 0.737);
-  height: 150px;
+  height: 350px;
   width: 250px;
   border-radius: 20px;
   transition: 0.25s;
@@ -288,6 +309,7 @@ items4 {
 #option-menu.active {
   margin-top: 15%;
   transition: 0.5s;
+  height: 400px;
 }
 
 #link-option a {
@@ -304,6 +326,39 @@ items4 {
   background-color: rgba(134, 134, 134, 0.99);
   border: none;
 }
+
+li{
+  padding:1px;
+  color: white;
+ padding-left:10px; 
+
+} 
+
+li input{
+  background-color: rgba(134, 134, 134, 0.99);
+  border: none;
+  outline: none;
+}
+
+.setfav{
+  color: white;
+  background-color: rgba(134, 134, 134, 0.559);
+  border: none;
+  margin-left: 105px;
+  border-radius: 20px;
+}
+
+.setfav:active{
+  background-color: rgba(134, 134, 134, 0.99);
+}
+
+
+
+
+
+
+
+
 
 /* ---------------RESPONSIVE---------------------------- */
 @media screen and (max-width: 768px) {

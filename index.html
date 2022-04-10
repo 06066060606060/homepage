@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="GetJSON(), bitcoinP(), Favoris(), bitcoinprice()">
+<body onload="GetJSON(), bitcoinP(), favorite(), bitcoinprice()">
     <div id="bg">
         <img id="InputB" src="" alt="">
     </div>
@@ -24,13 +24,13 @@
                         <span>Favoris</span>
                     </div>
               
-                    <div class="favoris"> <img id="icon1" src="./img/1.png" alt=""><a id="fav1" href=""></a></div>
-                    <div class="favoris"> <img id="icon2" src="./img/2.png" alt=""><a id="fav2" href=""></a></div>
-                    <div class="favoris"> <img id="icon3" src="./img/3.png" alt=""><a id="fav3" href=""></a></div>
-                    <div class="favoris"> <img id="icon4" src="./img/4.png" alt=""><a id="fav4" href=""></a></div>
-                    <div class="favoris"> <img id="icon5" src="./img/5.png" alt=""><a id="fav5" href=""></a></div>
-                    <div class="favoris"> <img id="icon6" src="./img/6.png" alt=""><a id="fav6" href="http://localhost">localhost</a></div>
-                    <div class="favoris"> <img id="icon7" src="./img/7.png" alt=""><a id="fav7" href=""></a></div>
+                    <div class="favoris"> <img id="icon1" src="" alt=""><a id="fav1" href=""></a></div>
+                    <div class="favoris"> <img id="icon2" src="" alt=""><a id="fav2" href=""></a></div>
+                    <div class="favoris"> <img id="icon3" src="" alt=""><a id="fav3" href=""></a></div>
+                    <div class="favoris"> <img id="icon4" src="" alt=""><a id="fav4" href=""></a></div>
+                    <div class="favoris"> <img id="icon5" src="" alt=""><a id="fav5" href=""></a></div>
+                    <div class="favoris"> <img id="icon6" src="" alt=""><a id="fav6" href="http://localhost">localhost</a></div>
+                    <div class="favoris"> <img id="icon7" src="" alt=""><a id="fav7" href=""></a></div>
                 </div>
              </div>
             </items1>
@@ -54,6 +54,19 @@
               <p id="link-option"><a href="https://github.com/06066060606060/homepage">Sources Github</a></p>
               <p id="link-option"><a href="./test/grid.html">Mon grid layout</a></p>
               <p id="link-option"><a href="./test/js/test-jeux-js.html">Test jeux JS</a></p>
+              <p>Liste des Favoris:</p>
+              <p>
+                <ol>
+                    <li> <input type="text" id="bk1" value=""></li>
+                    <li> <input type="text" id="bk2" value=""></li>
+                    <li> <input type="text" id="bk3" value=""></li>
+                    <li> <input type="text" id="bk4" value=""></li>
+                    <li> <input type="text" id="bk5" value=""></li>
+                    <li> <input type="text" id="bk6" value=""></li>
+                    <li> <input type="text" id="bk7" value=""></li>
+                  </ol> 
+                  <button class="setfav" onclick="favoriteSave()">Save</button>
+              </p>
             </div>
             </items4>
 <!--FIN GRID BARRE -->
