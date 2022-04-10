@@ -112,18 +112,14 @@ function btccheck() {
 //       document.getElementById("fav2").text = outputn2;
 //       document.getElementById("fav2").href = output2;
 
-
 //       document.getElementById("fav3").text = outputn3;
 //       document.getElementById("fav3").href = output3;
-
 
 //       document.getElementById("fav4").text = outputn4;
 //       document.getElementById("fav4").href = output4;
 
-
 //       document.getElementById("fav5").text = outputn5;
 //       document.getElementById("fav5").href = output5;
-  
 
 //       // document.getElementById("fav6").text = outputn7;
 //       // document.getElementById("fav6").href = output7;
@@ -141,13 +137,13 @@ function favorite() {
   var storedValue = localStorage.getItem("fav1");
 
   if (storedValue == null) {
-  localStorage.setItem("fav1", "http://youtube.com"); // save to local storage
-  localStorage.setItem("fav2", "http://twitter.com"); // save to local storage
-  localStorage.setItem("fav3", "http://google.com"); // save to local storage
-  localStorage.setItem("fav4", "http://facebook.com"); // save to local storage
-  localStorage.setItem("fav5", "http://reddit.com"); // save to local storage
-  localStorage.setItem("fav6", "http://youtube.com"); // save to local storage
-  localStorage.setItem("fav7", "http://youtube.com"); // save to local storage
+    localStorage.setItem("fav1", "http://youtube.com"); // save to local storage
+    localStorage.setItem("fav2", "http://twitter.com"); // save to local storage
+    localStorage.setItem("fav3", "http://google.com"); // save to local storage
+    localStorage.setItem("fav4", "http://facebook.com"); // save to local storage
+    localStorage.setItem("fav5", "http://reddit.com"); // save to local storage
+    localStorage.setItem("fav6", "http://youtube.com"); // save to local storage
+    localStorage.setItem("fav7", "http://youtube.com"); // save to local storage
   } else {
     output1 = localStorage.getItem("fav1");
     output2 = localStorage.getItem("fav2");
@@ -157,39 +153,47 @@ function favorite() {
     output6 = localStorage.getItem("fav6");
     output7 = localStorage.getItem("fav7");
 
-    document.getElementById("icon1").src = output1 + "/favicon.ico";  //grab favicon
-    document.getElementById("fav1").text = output1;
+    document.getElementById("icon1").src = output1 + "/favicon.ico"; //grab favicon
+
+    fav1u = removeHttp(output1);
+    document.getElementById("fav1").text = fav1u;
     document.getElementById("fav1").href = output1;
     document.getElementById("bk1").value = output1;
 
-//-------------------------------------------------------
-document.getElementById("icon2").src = output2 + "/favicon.ico";
-    document.getElementById("fav2").text = output2;
+    //-------------------------------------------------------
+    document.getElementById("icon2").src = output2 + "/favicon.ico";
+    fav2u = removeHttp(output2);
+    document.getElementById("fav2").text = fav2u;
     document.getElementById("fav2").href = output2;
     document.getElementById("bk2").value = output2;
 
     document.getElementById("icon3").src = output3 + "/favicon.ico";
-    document.getElementById("fav3").text = output3;
+    fav3u = removeHttp(output3);
+    document.getElementById("fav3").text = fav3u;
     document.getElementById("fav3").href = output3;
     document.getElementById("bk3").value = output3;
 
     document.getElementById("icon4").src = output4 + "/favicon.ico";
-    document.getElementById("fav4").text = output4;
+    fav4u = removeHttp(output4);
+    document.getElementById("fav4").text = fav4u;
     document.getElementById("fav4").href = output4;
     document.getElementById("bk4").value = output4;
 
     document.getElementById("icon5").src = output5 + "/favicon.ico";
-    document.getElementById("fav5").text = output5;
+    fav5u = removeHttp(output5);
+    document.getElementById("fav5").text = fav5u;
     document.getElementById("fav5").href = output5;
     document.getElementById("bk5").value = output5;
 
     document.getElementById("icon6").src = output6 + "/favicon.ico";
-    document.getElementById("fav6").text = output6;
+    fav6u = removeHttp(output6);
+    document.getElementById("fav6").text = fav6u;
     document.getElementById("fav6").href = output6;
     document.getElementById("bk6").value = output6;
 
     document.getElementById("icon7").src = output7 + "/favicon.ico";
-    document.getElementById("fav7").text = output7;
+    fav7u = removeHttp(output7);
+    document.getElementById("fav7").text = fav7u;
     document.getElementById("fav7").href = output7;
     document.getElementById("bk7").value = output7;
   }
@@ -204,12 +208,25 @@ function favoriteSave() {
   var favs6 = document.getElementById("bk6").value;
   var favs7 = document.getElementById("bk7").value;
 
-  localStorage.setItem("fav1", favs1); 
+  localStorage.setItem("fav1", favs1);
   localStorage.setItem("fav2", favs2);
-  localStorage.setItem("fav3", favs3); 
-  localStorage.setItem("fav4", favs4); 
-  localStorage.setItem("fav5", favs5); 
-  localStorage.setItem("fav6", favs6); 
+  localStorage.setItem("fav3", favs3);
+  localStorage.setItem("fav4", favs4);
+  localStorage.setItem("fav5", favs5);
+  localStorage.setItem("fav6", favs6);
   localStorage.setItem("fav7", favs7);
+  location.reload();
+}
 
+function removeHttp(url) {
+  if (url.startsWith("https://")) {
+    const https = "https://";
+    return url.slice(https.length);
+  }
+
+  if (url.startsWith("http://")) {
+    const http = "http://";
+    return url.slice(http.length);
+  }
+  return url;
 }
