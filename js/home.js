@@ -1,7 +1,6 @@
 //Mes fonctions JS
 
-
-// fonction background bing avec selecteur.
+// ---------------------------------------------fonction background bing avec selecteur + sauvegarde web storage.--------------------------------
 function GetJSON() {
   var xmlhttp = new XMLHttpRequest();
   var url = "https://peapix.com/bing/feed?country=FR";
@@ -14,7 +13,7 @@ function GetJSON() {
     localStorage.setItem("variant", "1");
     var imgvariant = "1";
   } else {
-    //console.log("variant not null"); 
+    //console.log("variant not null");
     var imgvariant = localStorage.getItem("variant");
     document.getElementById("quantity").value = imgvariant;
   }
@@ -31,28 +30,58 @@ function GetJSON() {
   xmlhttp.open("GET", url, true);
   xmlhttp.send();
 }
-// change background
+// ----------------------------------------selecteur background---------------------------------------
 function changeBg() {
-imgvariant = document.getElementById("quantity").value;
-localStorage.setItem("variant", imgvariant);
+  imgvariant = document.getElementById("quantity").value;
+  localStorage.setItem("variant", imgvariant);
 }
 
-
-// active menu favoris
+//---------------------------- active menu favoris-------------------------------------------
 function toggleNav() {
   var updateElement = document.getElementById("menu");
   updateElement.classList.toggle("active");
 }
 
 // active menu option
-function optionMenu(){
+function optionMenu() {
   //console.log("optionMenu");
   var optionmenu = document.getElementById("option-menu");
   optionmenu.classList.toggle("active");
 }
 
+// --------------------------------active bitcoin price---------------------------------
+function bitcoinprice() {
+  var btcstorage =  localStorage.getItem("bitcoin");
+  if (btcstorage == null) {
+    // console.log("variant null");
+    localStorage.setItem("bitcoin", "0");
+  } else if (btcstorage == 1) {
+    btcprice.classList.toggle("active");
+    document.getElementById("btc-check").checked = true;
+  }
 
-//fonction favoris en json
+}
+
+function btccheck(){
+  var checkBox = document.getElementById("btc-check");
+  var btcprice = document.getElementById("btcprice");
+
+  if (checkBox.checked == true){
+    btcprice.classList.toggle("active");
+    localStorage.setItem("bitcoin", "1");
+  // console.log("checked");
+  } else {
+  //  console.log("unchecked");
+    btcprice.classList.toggle("active");
+    localStorage.setItem("bitcoin", "0");
+  }
+}
+
+
+
+
+
+//---------------------------------fonction favoris en json----------------------------------------
 
 function Favoris() {
   fetch("./favoris.json")
@@ -88,19 +117,15 @@ function Favoris() {
 
       document.getElementById("fav2").text = outputn2;
       document.getElementById("fav2").href = output2;
-    
 
       document.getElementById("fav3").text = outputn3;
       document.getElementById("fav3").href = output3;
 
-
       document.getElementById("fav4").text = outputn4;
       document.getElementById("fav4").href = output4;
 
-
       document.getElementById("fav5").text = outputn5;
       document.getElementById("fav5").href = output5;
-
 
       document.getElementById("fav7").text = outputn7;
       document.getElementById("fav7").href = output7;

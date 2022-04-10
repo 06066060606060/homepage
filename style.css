@@ -209,12 +209,15 @@ items3 {
    width: 110px;
   margin-top: 4px;
   padding-left: 5px;
+
   /* background-color: #3476ce; */
 }
 
 items3.active {
+  display: block;
   margin-top: 4px;
   padding-left: 5px;
+
   /* background-color: #3476ce; */
 }
 
@@ -233,7 +236,7 @@ items3.active {
   margin-left: 40px;
   margin-top: 7px;
 }
-/* ----------------------------grid item 4 ------------------------------------*/
+/* ----------------------------grid item 4 option boutton------------------------------------*/
 
 items4 {
   margin-top: 4px;
@@ -275,7 +278,7 @@ items4 {
 #option-menu {
   position: fixed;
   z-index: 1;
-  padding: 10px;
+  padding: 20px;
    margin-top: -50%;
   /* margin-top: 15%; */
   margin-left: 20%;
@@ -296,7 +299,7 @@ items4 {
 /* menu activé par le js */
 #option-menu.active {
   margin-top: 15%;
-  transition: 0.3s;
+  transition: .5s;
 }
 
 
