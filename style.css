@@ -12,7 +12,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Share Tech", sans-serif;
+
 }
+
 /*//---------BACKGROUND--IMAGE-BING--------------// */
 #bg {
   position: fixed;
@@ -48,8 +50,9 @@ grid {
   height: 61px;
   border-radius: 0px 0px 20px 0px;
   min-width: auto;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
 }
 /*//------------------------// */
 
@@ -101,7 +104,7 @@ span:active{
 /* ----------------------------menu favoris ------------------------------------*/
 #menu {
   height: 295px;
-  width: 250px;
+  width: 230px;
   position: fixed;
   top: 0;
   margin-top: 40px;
@@ -113,6 +116,8 @@ span:active{
   transition: 0.25s;
   border-radius: 20px;
   user-select: none;
+  overflow: hidden;
+
 }
 
 #menu.active {
@@ -137,6 +142,7 @@ a#fav7 {
   font-size: 1.2em;
   color: rgb(255, 255, 255);
   margin-top: 2px;
+
 }
 
 #menu a:hover {
@@ -152,7 +158,7 @@ img#icon5,
 img#icon6,
 img#icon7 {
   padding-right: 15px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 5px;
   height: 18px;
   width: 18px;
