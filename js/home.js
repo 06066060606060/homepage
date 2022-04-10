@@ -79,7 +79,7 @@ function btccheck() {
 //---------------------------------fonction favoris en json----------------------------------------
 
 // function Favoris() {
-//   fetch("./favoris.json")
+//   fetch("./test/favoris.json")
 //     .then((res) => res.json())
 //     .then((out) => {
 //       // console.table(out);
@@ -143,7 +143,8 @@ function favorite() {
     localStorage.setItem("fav4", "http://facebook.com"); // save to local storage
     localStorage.setItem("fav5", "http://reddit.com"); // save to local storage
     localStorage.setItem("fav6", "http://youtube.com"); // save to local storage
-    localStorage.setItem("fav7", "http://youtube.com"); // save to local storage
+    localStorage.setItem("fav7", "http://youtube.com"); // save to local 
+    location.reload();
   } else {
     output1 = localStorage.getItem("fav1");
     output2 = localStorage.getItem("fav2");

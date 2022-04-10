@@ -55,8 +55,8 @@ grid {
 
 /* ----------------------------grid item 1 Start boutton ------------------------------------*/
 
-items1 {
-}
+/* items1 {
+} */
 
 .menu-icon {
   position: fixed;
@@ -166,6 +166,7 @@ items2 {
 }
 
 .SearchBtn {
+  position:fixed;
   color: rgba(255, 255, 255, 0.524);
   font-weight: 600;
   margin-left: -4px;
@@ -291,11 +292,11 @@ items4 {
   position: fixed;
   z-index: 1;
   padding: 20px;
-   margin-top: -100%;
+  margin-top: -100%;
    /* margin-top: 15%; */
   margin-left: 20%;
   background-color: rgba(0, 0, 0, 0.737);
-  height: 350px;
+  height: 240px;
   width: 250px;
   border-radius: 20px;
   transition: 0.25s;
@@ -304,15 +305,20 @@ items4 {
 
 #option-menu p {
   color: white;
-  margin-left: 25px;
+  margin-left: 20px;
   margin: 10px;
+  text-align: center;
+}
+
+#option-menu p:nth-child(1){
+  margin-left: -10px;
 }
 
 /* menu activé par le js */
 #option-menu.active {
   margin-top: 15%;
   transition: 0.5s;
-  height: 400px;
+  height: 350px;
 }
 
 #link-option a {
@@ -322,12 +328,15 @@ items4 {
 
 /* Selecteur background */
 #quantity {
+  text-align: center;
   margin-left: 5px;
   position: fixed;
-  width: 30px;
+  width: 35px;
   outline: none;
   background-color: rgba(134, 134, 134, 0.99);
   border: none;
+  padding: 3px;
+  border-radius:20px;
 }
 
 li{
@@ -339,28 +348,23 @@ li{
 
 li input{
   background-color: rgba(134, 134, 134, 0.99);
+  text-align: center;
   border: none;
   outline: none;
+  border-radius:20px;
 }
 
 .setfav{
   color: white;
   background-color: rgba(134, 134, 134, 0.559);
   border: none;
-  margin-left: 105px;
+  margin-left: 70px;
   border-radius: 20px;
 }
 
 .setfav:active{
   background-color: rgba(134, 134, 134, 0.99);
 }
-
-
-
-
-
-
-
 
 
 /* ---------------RESPONSIVE---------------------------- */
