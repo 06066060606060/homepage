@@ -31,16 +31,25 @@ function GetJSON() {
   xmlhttp.open("GET", url, true);
   xmlhttp.send();
 }
-
+// change background
 function changeBg() {
 imgvariant = document.getElementById("quantity").value;
 localStorage.setItem("variant", imgvariant);
 }
 
+
+// apparition menu
 function toggleNav() {
   var updateElement = document.getElementById("menu");
   updateElement.classList.toggle("active");
 }
+
+function optionMenu(){
+  console.log("optionMenu");
+  var optionmenu = document.getElementById("option-menu");
+  optionmenu.classList.toggle("active");
+}
+
 
 //fonction favoris en json
 

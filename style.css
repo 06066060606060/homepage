@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+*::selection {
+  background-color: #202020a2;
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -30,9 +35,6 @@ body {
   min-height: 50%;
 }
 /*//------------------------// */
-
-
-
 
 /*//---------GRID---------------// */
 grid {
@@ -68,32 +70,35 @@ span {
   display: inline-block;
   height: 22px;
   width: 50px;
-  background-color:rgba(0, 0, 0, 0.286);
+  background-color: rgba(0, 0, 0, 0.286);
   transition: 0.5s;
-  padding-top: 12px;
+  padding-top: 13px;
   padding-bottom: 8px;
   padding-left: 25px;
-  padding-right: 22px;
+  padding-right: 20px;
   border-radius: 25px;
+  user-select: none;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 /*  Menu Hover */
 span:hover,
 span:hover::after,
 span:hover::before {
-    background-color:rgba(0, 0, 0, 0.66);
-   transition: 0.25s;
+  background-color: rgba(0, 0, 0, 0.66);
+  transition: 0.25s;
 }
 
 #blur {
-    padding: 10px;
-    background-color:rgba(0, 0, 0, 0.712);
-    border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.712);
+  border-radius: 20px;
 }
 
 /* menu */
 #menu {
-  height:295px;
+  height: 295px;
   width: 250px;
   position: fixed;
   top: 0;
@@ -105,7 +110,7 @@ span:hover::before {
   padding-top: 30px;
   transition: 0.25s;
   border-radius: 20px;
-  
+  user-select: none;
 }
 
 #menu.active {
@@ -154,10 +159,10 @@ items2 {
 }
 
 .SearchBtn {
-    color: white;
+  color: white;
   font-weight: 600;
   margin-left: -4px;
-  background-color:rgba(0, 0, 0, 0.286);
+  background-color: rgba(0, 0, 0, 0.286);
   height: 41px;
   width: 80px;
   border-radius: 0px 20px 20px 0px;
@@ -166,7 +171,7 @@ items2 {
 
 .SearchBtn:hover {
   transition: 0.25s;
-   background-color:rgba(0, 0, 0, 0.66);
+  background-color: rgba(0, 0, 0, 0.66);
 }
 
 #form {
@@ -176,13 +181,12 @@ items2 {
 }
 
 #query {
-
   margin-left: 3px;
   border: 0px solid;
   height: 40px;
   border-radius: 20px 0px 0px 20px;
   padding: 10px;
- background-color:rgba(99, 99, 99, 0.601)
+  background-color: rgba(99, 99, 99, 0.601);
 }
 
 #query:focus {
@@ -200,13 +204,6 @@ items3 {
   /* background-color: #3476ce; */
 }
 
-items4 {
-
-    margin-top: 4px;
-    padding-left: 5px;
-    /* background-color: #34ce8b;  */
-  }
-
 .btc {
   margin: 10px;
   background-image: url(./img/Bitcoin.svg.png);
@@ -214,6 +211,7 @@ items4 {
   width: 32px;
 }
 
+/* BTC Price */
 #textInputB {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(255, 255, 255);
@@ -221,10 +219,63 @@ items4 {
   margin-left: 40px;
   margin-top: 7px;
 }
+/* grid item 4 */
+
+items4 {
+  margin-top: 4px;
+  padding-left: 5px;
+  /* background-color: #34ce8b;  */
+}
 
 
-#quantity{
-    width: 40px;
+/* Menu d'option */
+
+
+.option-icon {
+  padding-top:5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  color: aliceblue;
+  margin-top: 12px;
+  height: 24px;
+  width: 52px;
+  background-color: rgba(22, 22, 22, 0.638);
+  border-radius: 20px;
+}
+
+.option-icon:hover {
+  background-color: rgba(22, 22, 22, 0.891);
+}
+
+#option-menu {
+  position: fixed;
+  z-index: 1;
+  /* margin-top: -30%; */
+  margin-top: 10%;
+  margin-left: 20%;
+  background-color: rgba(0, 0, 0, 0.737);
+  height: 100px;
+  width: 250px;
+  border-radius: 20px;
+  transition: 0.25s;
+}
+
+#option-menu p{
+  color: white;
+margin-left: 25px;
+}
+
+#option-menu.active {
+  margin-top: -30%;
+  transition: 0.3s;
+}
+
+/* Selecteur background */
+#quantity {
+  margin-left: 5px;
+  position: fixed;
+  width: 30px;
   outline: none;
   background-color: rgba(134, 134, 134, 0.99);
   border: none;
