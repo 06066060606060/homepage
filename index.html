@@ -14,62 +14,74 @@
         <img id="InputB" src="" alt="">
     </div>
     <header>
-           <!--GRID BARRE -->
-        <grid> 
+        <!--GRID BARRE -->
+        <grid>
             <!-- GRID ITEM 1 -->
             <items1>
                 <div id="menu">
                     <div id="blur">
-                    <div class="menu-icon" onclick="toggleNav()">
-                        <span>Favoris</span>
+                        <div class="menu-icon" onclick="toggleNav()">
+                            <span>Favoris</span>
+                        </div>
+                        <div class="favoris"> <img id="icon1" src="" alt=""><a id="fav1" href=""></a></div>
+                        <div class="favoris"> <img id="icon2" src="" alt=""><a id="fav2" href=""></a></div>
+                        <div class="favoris"> <img id="icon3" src="" alt=""><a id="fav3" href=""></a></div>
+                        <div class="favoris"> <img id="icon4" src="" alt=""><a id="fav4" href=""></a></div>
+                        <div class="favoris"> <img id="icon5" src="" alt=""><a id="fav5" href=""></a></div>
+                        <div class="favoris"> <img id="icon6" src="" alt=""><a id="fav6" href=""></a></div>
+                        <div class="favoris"> <img id="icon7" src="" alt=""><a id="fav7" href=""></a></div>
                     </div>
-              
-                    <div class="favoris"> <img id="icon1" src="" alt=""><a id="fav1" href=""></a></div>
-                    <div class="favoris"> <img id="icon2" src="" alt=""><a id="fav2" href=""></a></div>
-                    <div class="favoris"> <img id="icon3" src="" alt=""><a id="fav3" href=""></a></div>
-                    <div class="favoris"> <img id="icon4" src="" alt=""><a id="fav4" href=""></a></div>
-                    <div class="favoris"> <img id="icon5" src="" alt=""><a id="fav5" href=""></a></div>
-                    <div class="favoris"> <img id="icon6" src="" alt=""><a id="fav6" href=""></a></div>
-                    <div class="favoris"> <img id="icon7" src="" alt=""><a id="fav7" href=""></a></div>
                 </div>
-             </div>
             </items1>
-<!-- GRID ITEM 2 google search-->
+            <!-- GRID ITEM 2 google search-->
             <items2>
                 <form role="search" id="form">
                     <input type="search" id="query" name="q" placeholder="   Google Search..." aria-label="Search">
                     <button class="SearchBtn">Search</button>
                 </form>
             </items2>
-<!-- GRID ITEM 3 btc -->
+            <!-- GRID ITEM 3 btc -->
             <items3 id="btcprice">
                 <p id="btc"><input type="text" id="textInputB" disabled="disabled" value=""></p>
             </items3>
-<!-- GRID ITEM 4 option-->
+            <!-- GRID ITEM 4 option-->
             <items4>
                 <div class="option-icon" onclick="optionMenu()"><i>Options</i></div>
-            <div id="option-menu">
-              <p class="bgvariant">Background Variant: <input type="number" id="quantity" name="quantity" min="1" max="6" value="" onchange="changeBg(), GetJSON()"></p>
-              <p id="btc-option">Bitcoin Live Price: <input type="checkbox" id="btc-check" ischecked="false" onchange="btccheck(), optionMenu()"></p>
-              <p id="link-option"><a href="https://github.com/06066060606060/homepage">Sources Github</a></p>
-              <p id="link-option"><a href="./test/grid.html">Mon grid layout</a></p>
-              <p id="link-option"><a href="./test/js/test-jeux-js.html">Test mouvement JS</a></p>
-              <p>Liste des Favoris:</p>
-              <p>
-                <ol>
-                    <li> <input type="text" id="bk1" value=""></li>
-                    <li> <input type="text" id="bk2" value=""></li>
-                    <li> <input type="text" id="bk3" value=""></li>
-                    <li> <input type="text" id="bk4" value=""></li>
-                    <li> <input type="text" id="bk5" value=""></li>
-                    <li> <input type="text" id="bk6" value=""></li>
-                    <li> <input type="text" id="bk7" value=""></li>
-                    <button class="setfav" onclick="favoriteSave()">Save</button>
-                  </ol> 
-              </p>
-            </div>
+                <div id="option-menu">
+                    <i class="close" onclick="optionMenu()">x</i>>
+                    <p class="bgvariant">Background Variant: <input type="number" id="quantity" name="quantity" min="1"
+                            max="6" value="" onchange="changeBg(), GetJSON()"></p>
+                    <p id="meteon">Live meteo: <input type="checkbox" id="meteo-check" ischecked="false" onchange="">
+                    </p>
+                    <p id="btc-option">Bitcoin Live Price: <input type="checkbox" id="btc-check" ischecked="false"
+                            onchange="btccheck(), optionMenu()">
+                    </p>
+                    <p id="link-option"><a href="https://github.com/06066060606060/homepage">Sources Github</a></p>
+                    <p id="link-option"><a href="./test/grid.html">Mon grid layout</a></p>
+                    <p id="link-option"><a href="./test/js/test-jeux-js.html">Test mouvement JS</a></p>
+                    <p>Liste des Favoris:</p>
+                    <p>
+                    <ol>
+                        <li> <input type="text" id="bk1" value=""></li>
+                        <li> <input type="text" id="bk2" value=""></li>
+                        <li> <input type="text" id="bk3" value=""></li>
+                        <li> <input type="text" id="bk4" value=""></li>
+                        <li> <input type="text" id="bk5" value=""></li>
+                        <li> <input type="text" id="bk6" value=""></li>
+                        <li> <input type="text" id="bk7" value=""></li>
+                        <button class="setfav" onclick="favoriteSave()">Save</button>
+                    </ol>
+                    </p>
+                </div>
             </items4>
-<!--FIN GRID BARRE -->
+            <item5>
+                <p class="meteo">Meteo</p>
+
+            </item5>
+
+
+
+            <!--FIN GRID BARRE -->
         </grid>
     </header>
 
