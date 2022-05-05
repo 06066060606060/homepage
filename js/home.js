@@ -1,4 +1,11 @@
 //Mes fonctions JS
+const cors = require("cors")
+app.use(
+ cors({
+   origin: "*",
+ })
+   )
+
 
 // ---------------------------------------------fonction background bing avec selecteur + sauvegarde web storage.--------------------------------
 function GetJSON() {
