@@ -44,6 +44,7 @@ function toggleNav() {
   updateElement.classList.toggle("active");
 }
 
+
 // active menu option
 function optionMenu() {
   //console.log("optionMenu");

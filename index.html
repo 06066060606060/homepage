@@ -20,7 +20,7 @@
             <items1>
                 <div id="menu">
                     <div id="blur">
-                        <div class="menu-icon" onclick="toggleNav()">
+                        <div class="menu-icon" onmouseover="toggleNav()">
                             <span>Favoris</span>
                         </div>
                         <div class="favoris"> <img id="icon1" src="" alt=""><a id="fav1" href=""></a></div>
@@ -48,7 +48,7 @@
             <items4>
                 <div class="option-icon" onclick="optionMenu()"><i>Options</i></div>
                 <div id="option-menu">
-                    <i class="close" onclick="optionMenu()">x</i>>
+                    <i class="close" onclick="optionMenu()">x</i>
                     <p class="bgvariant">Background Variant: <input type="number" id="quantity" name="quantity" min="1"
                             max="6" value="" onchange="changeBg(), GetJSON()"></p>
                     <p id="meteon">Live meteo: <input type="checkbox" id="meteo-check" ischecked="false" onchange="">
@@ -57,8 +57,6 @@
                             onchange="btccheck(), optionMenu()">
                     </p>
                     <p id="link-option"><a href="https://github.com/06066060606060/homepage">Sources Github</a></p>
-                    <p id="link-option"><a href="./test/grid.html">Mon grid layout</a></p>
-                    <p id="link-option"><a href="./test/js/test-jeux-js.html">Test mouvement JS</a></p>
                     <p>Liste des Favoris:</p>
                     <p>
                     <ol>
